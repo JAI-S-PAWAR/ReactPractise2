@@ -20,12 +20,15 @@ function RenderComments({comments}){
             return(
             <div row="col-12 col-md-5 m-1">
                 <h4>Comments</h4>
-                {comments.map(comm=>{
-                    return(<div key={comm.id}>
-                        <p>{comm.comment}</p>
-                        <p>-- {comm.author}</p>
-                    </div>)
-                    
+                {comments.map((comm)=>{
+                    return(
+                        <ul className ='list-unstyled' key = {comm.id}>
+                        <li>
+                            <div>{comm.comment}</div>
+                            <div>{`-- ${comm.author} , ${new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day:'2-digit'}).format(new Date(Date.parse(comm.date)))}`}</div>
+                        </li>
+                        </ul>
+                    )  
                 })}
             </div>)
         }
