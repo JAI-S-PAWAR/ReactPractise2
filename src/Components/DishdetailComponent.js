@@ -49,12 +49,14 @@ const DishDetail=(props)=>{
                         <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
                         <BreadcrumbItem active>{props.dish.name}</BreadcrumbItem>
                     </Breadcrumb>
-                        <div className="col-12 col-md-5 m-1">
+                    </div>
+                    <div className="row">
+                    <div className="col-12 col-md-5 m-1">
                             <RenderDish dish={dish}/>
-                        </div>
-                         <div className="col-12 col-md-5 m-1">
+                    </div>
+                    <div className="col-12 col-md-5 m-1">
                             <RenderComments comments={dish.comments}/>
-                        </div>
+                    </div>
                     </div>
 
                 </div>
