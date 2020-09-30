@@ -144,8 +144,7 @@ class Contact extends Component {
                                         validators={{
                                             required, validEmail
                                         }} />
-                                </Col>
-                                <Errors
+                                    <Errors
                                         className="text-danger"
                                         model=".email"
                                         show="touched"
@@ -154,6 +153,8 @@ class Contact extends Component {
                                             validEmail: 'Invalid Email Address'
                                         }}
                                      />
+                                </Col>
+                                
                             </Row>
                             <Row className="form-group">
                                 <Col md={{size: 6, offset: 2}}>
