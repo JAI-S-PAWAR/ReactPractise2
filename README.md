@@ -1,4 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It is a sample restaurant website created with React.js, Redux for state management and Bootstrap for styling.
 
 ## Available Scripts
 
